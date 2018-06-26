@@ -8,6 +8,6 @@
 
 import Foundation
 enum LaunchType:String{
-    case feature
+    case future
     case history
 }

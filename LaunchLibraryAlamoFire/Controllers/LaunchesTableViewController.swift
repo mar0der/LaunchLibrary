@@ -23,7 +23,7 @@ class LaunchesTableViewController: UITableViewController {
     
     private var isDataBeingUpdated: Bool = false
     private var previousLaunchType: LaunchType = .history
-    private var currentLaunchType: LaunchType = .feature
+    private var currentLaunchType: LaunchType = .future
     private var previousSort: SortEnum = .desc
     private var currentSort: SortEnum = .asc
     private var defaultLimit: Int = 20
@@ -39,12 +39,12 @@ class LaunchesTableViewController: UITableViewController {
         switch sender.selectedSegmentIndex {
         case 0:
             currentLaunchType = .history
-            previousLaunchType = .feature
+            previousLaunchType = .future
             currentSort = .desc
             previousSort = .asc
             sortButton.isEnabled = true
         case 1:
-            currentLaunchType = .feature
+            currentLaunchType = .future
             previousLaunchType = .history
             currentSort = .asc
             previousSort = .desc

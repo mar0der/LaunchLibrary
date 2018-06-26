@@ -15,12 +15,12 @@ class WebAPI
     
     static func getLaunches(type: LaunchType, limit: Int, offset:Int, sort: SortEnum, completion: @escaping ([Launch]?) -> Void){
         switch type {
-        case .feature:
+        case .future:
             let urlString = self.baseUrl + "launch/?offset=\(offset)&next=\(limit)"
             self.getLaunches(urlString: urlString, completion: completion)
         case .history:
-            //FIXME: use the current date
-            let urlString = self.baseUrl + "launch/1930-01-01/2018-06-27/?limit=\(limit)&offset=\(offset)&sort=\(sort.rawValue)"
+            //FIXME: get the current date
+            let urlString = self.baseUrl + "launch/1930-01-01/2018-06-26/?limit=\(limit)&offset=\(offset)&sort=\(sort.rawValue)"
             self.getLaunches(urlString: urlString, completion: completion)
         }
     }
