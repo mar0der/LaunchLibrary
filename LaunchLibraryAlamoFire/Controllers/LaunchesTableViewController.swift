@@ -22,17 +22,25 @@ class LaunchesTableViewController: UITableViewController {
     }
     
     private var isDataBeingUpdated: Bool = false
+    
     private var previousLaunchType: LaunchType = .history
     private var currentLaunchType: LaunchType = .future
     private var previousSort: SortEnum = .desc
     private var currentSort: SortEnum = .asc
     private var defaultLimit: Int = 20
     
+    @IBAction func refreshData(_ sender: UIRefreshControl) {
+        pullMoreData(type: currentLaunchType, limit: defaultLimit, offset: 0, sort: currentSort, showSpinner: false)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+//        tableView.rowHeight = UITableViewAutomaticDimension
+//        tableView.estimatedRowHeight = 140
         //we start with fature lauches
         sortButton.isEnabled = false
         self.pullMoreData(type: currentLaunchType, limit: defaultLimit, offset: 0, sort: .asc, showSpinner: true)
+
     }
     
     @IBAction func launchTypeChanged(_ sender: UISegmentedControl) {
@@ -60,11 +68,11 @@ class LaunchesTableViewController: UITableViewController {
         if previousSort == .asc {
             currentSort = .asc
             previousSort = .desc
-            self.sortButton?.title = "desc"
+            self.sortButton?.title = "sort⇣"
         }else{
             currentSort = .desc
             previousSort = .asc
-            self.sortButton?.title = "asc"
+            self.sortButton?.title = "sort⇡"
         }
         launches = []
         pullMoreData(type: currentLaunchType, limit: defaultLimit, offset: 0, sort: currentSort, showSpinner: true)
@@ -78,15 +86,11 @@ class LaunchesTableViewController: UITableViewController {
                     SVProgressHUD.dismiss()
                 }
                 if let launches = launchesData {
-                    if type == self.previousLaunchType {
-                        self.launches += launches
-                    }else {
-                        self.launches = launches
-                    }
-                    
+                    self.launches += launches
                 }else{
                     //FIXME: - put nice alert for unable to fetch data
                 }
+                self.refreshControl?.endRefreshing()
                 self.isDataBeingUpdated = false
             }
         }
@@ -104,10 +108,17 @@ class LaunchesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LaunchCell", for: indexPath) as! LaunchTableViewCell
         let launch = self.launches[indexPath.row]
+        //FIXME: put this in extension of Date
+        let dateFormatterGet = DateFormatter()
+        dateFormatterGet.dateFormat = "yyyy-MM-dd HH:mm:ss zzz"
+        
         cell.launchName?.text = launch.name ?? ""
-        cell.rocketName?.text = indexPath.row.description + (launch.lsp?.name ?? "")
+        cell.rocketName?.text = launch.lsp?.name ?? ""
         cell.launchImageView.moa.url = launch.rocket?.imageURL ?? "placeholder"
-        cell.netLabel?.text = launch.net?.description(with: .current)
+        if let net = launch.net {
+           cell.netLabel?.text = dateFormatterGet.string(from: net)
+        }
+    
         //print(indexPath.row.description + " of " + launches.count.description)
         //FIXME: - extract number 10 to configuration file
         if indexPath.row > launches.count - 10 && isDataBeingUpdated == false {
@@ -123,9 +134,14 @@ class LaunchesTableViewController: UITableViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
-        case "MissionDetails":
+        case "GoToLaunchDetails":
             let launch = self.launches[tableView.indexPathForSelectedRow!.row]
             let destination = segue.destination as! MissionDetailsViewController
+            destination.launch = launch
+            
+        case "GoToLaunchDetailsTable":
+            let launch = self.launches[tableView.indexPathForSelectedRow!.row]
+            let destination = segue.destination as! LaunchDetailTableViewController
             destination.launch = launch
         default:
             break
@@ -133,3 +149,5 @@ class LaunchesTableViewController: UITableViewController {
         }
     }
 }
+
+//https://youtu.be/Sm3jupdLJBY?t=36m15s row height for table view

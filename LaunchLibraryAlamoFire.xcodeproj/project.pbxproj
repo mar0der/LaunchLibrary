@@ -17,6 +17,7 @@
 		D29FE8F520D847860099D82A /* Lsp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29FE8F420D847860099D82A /* Lsp.swift */; };
 		D2B00E6020E2ED8E004A8F01 /* SortEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B00E5F20E2ED8E004A8F01 /* SortEnum.swift */; };
 		D2B00E6220E2EF7E004A8F01 /* LauncType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B00E6120E2EF7E004A8F01 /* LauncType.swift */; };
+		D2C63D9D20E99344000BCDFE /* LaunchDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C63D9C20E99344000BCDFE /* LaunchDetailTableViewController.swift */; };
 		D2D3574320D84D1600F67FD3 /* LaunchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D3574220D84D1600F67FD3 /* LaunchesTableViewController.swift */; };
 		D2D3574520D967D000F67FD3 /* MissionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D3574420D967D000F67FD3 /* MissionDetailsViewController.swift */; };
 		D2D42A5120D8117600BAA9C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D42A5020D8117600BAA9C5 /* AppDelegate.swift */; };
@@ -43,6 +44,7 @@
 		D29FE8F420D847860099D82A /* Lsp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lsp.swift; sourceTree = "<group>"; };
 		D2B00E5F20E2ED8E004A8F01 /* SortEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortEnum.swift; sourceTree = "<group>"; };
 		D2B00E6120E2EF7E004A8F01 /* LauncType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncType.swift; sourceTree = "<group>"; };
+		D2C63D9C20E99344000BCDFE /* LaunchDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchDetailTableViewController.swift; path = Controllers/LaunchDetailTableViewController.swift; sourceTree = "<group>"; };
 		D2D3574220D84D1600F67FD3 /* LaunchesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchesTableViewController.swift; path = Controllers/LaunchesTableViewController.swift; sourceTree = "<group>"; };
 		D2D3574420D967D000F67FD3 /* MissionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MissionDetailsViewController.swift; path = Controllers/MissionDetailsViewController.swift; sourceTree = "<group>"; };
 		D2D42A4D20D8117600BAA9C5 /* LaunchLibraryAlamoFire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchLibraryAlamoFire.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +57,7 @@
 		D2D42A6120D8117800BAA9C5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2D42A6420D8117800BAA9C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2D42A6620D8117800BAA9C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2EC121B20E886D400DB0019 /* LaunchLibraryAlamoFire.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LaunchLibraryAlamoFire.entitlements; sourceTree = "<group>"; };
 		F9F09D7F6D0C72905A140F99 /* Pods-LaunchLibraryAlamoFire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaunchLibraryAlamoFire.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaunchLibraryAlamoFire/Pods-LaunchLibraryAlamoFire.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +130,7 @@
 		D2D42A4F20D8117600BAA9C5 /* LaunchLibraryAlamoFire */ = {
 			isa = PBXGroup;
 			children = (
+				D2EC121B20E886D400DB0019 /* LaunchLibraryAlamoFire.entitlements */,
 				D2D3574620D9F28200F67FD3 /* Supporting Files */,
 				D2D42A5E20D8117600BAA9C5 /* Main.storyboard */,
 				D2D42A6620D8117800BAA9C5 /* Info.plist */,
@@ -169,6 +173,7 @@
 				D2D3574220D84D1600F67FD3 /* LaunchesTableViewController.swift */,
 				D2D3574420D967D000F67FD3 /* MissionDetailsViewController.swift */,
 				D23EC21120E09F8700ABB757 /* MapViewController.swift */,
+				D2C63D9C20E99344000BCDFE /* LaunchDetailTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -223,6 +228,11 @@
 				TargetAttributes = {
 					D2D42A4C20D8117600BAA9C5 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -322,6 +332,7 @@
 				D2B00E6220E2EF7E004A8F01 /* LauncType.swift in Sources */,
 				D23EC21220E09F8700ABB757 /* MapViewController.swift in Sources */,
 				D23EC21020DEEB8700ABB757 /* Extensions.swift in Sources */,
+				D2C63D9D20E99344000BCDFE /* LaunchDetailTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +477,8 @@
 			baseConfigurationReference = 13A69F730505D71E3B4353BD /* Pods-LaunchLibraryAlamoFire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LaunchLibraryAlamoFire/LaunchLibraryAlamoFire.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TG94VNPLAA;
 				INFOPLIST_FILE = LaunchLibraryAlamoFire/Info.plist;
@@ -474,10 +487,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.petarpetkov.LaunchCalendar.LaunchLibrary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.petarpetkov.LaunchLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -486,6 +501,8 @@
 			baseConfigurationReference = F9F09D7F6D0C72905A140F99 /* Pods-LaunchLibraryAlamoFire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LaunchLibraryAlamoFire/LaunchLibraryAlamoFire.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TG94VNPLAA;
 				INFOPLIST_FILE = LaunchLibraryAlamoFire/Info.plist;
@@ -494,10 +511,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.petarpetkov.LaunchCalendar.LaunchLibrary;
+				PRODUCT_BUNDLE_IDENTIFIER = com.petarpetkov.LaunchLibrary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
