@@ -11,9 +11,24 @@ import Foundation
 extension Date {
     static func llDate(dateString:String) -> Date?{
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMMM dd, yyyy hh:mm:ss Z"
+        dateFormatter.dateFormat = "MMMM dd, yyyy HH:mm:ss Z"
         dateFormatter.locale = Locale(identifier: "en_US_POSIX")
-        return dateFormatter.date(from:dateString)
+        let returnDate = dateFormatter.date(from:dateString)
+        return returnDate
+    }
+    
+    static func llDateToString(_ date: Date) -> String{
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss zzz"
+        return dateFormatter.string(from: date)
+    }
+    
+    static func getCurrent(with format:String) -> String{
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.dateFormat = format
+        return dateFormatter.string(from: Date())
     }
     
     static func tMinusCounter(to date:Date?) -> String{

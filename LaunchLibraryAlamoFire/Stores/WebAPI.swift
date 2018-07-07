@@ -20,7 +20,12 @@ class WebAPI
             self.getLaunches(urlString: urlString, completion: completion)
         case .history:
             //FIXME: get the current date
-            let urlString = self.baseUrl + "launch/1930-01-01/2018-06-26/?limit=\(limit)&offset=\(offset)&sort=\(sort.rawValue)"
+            let date = Date()
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd"
+            print(Date.getCurrent(with: "yyyy-MM-dd"))
+            let dateString = dateFormatter.string(from: date)
+            let urlString = self.baseUrl + "launch/1930-01-01/\(dateString)/?limit=\(limit)&offset=\(offset)&sort=\(sort.rawValue)"
             self.getLaunches(urlString: urlString, completion: completion)
         }
     }

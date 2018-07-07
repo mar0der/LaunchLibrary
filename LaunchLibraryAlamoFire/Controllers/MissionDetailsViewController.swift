@@ -78,8 +78,8 @@ class MissionDetailsViewController: UIViewController, UIScrollViewDelegate {
         switch segue.identifier {
         case "GoToPadWiki":
             let destination = segue.destination as! WebViewController
-            destination.receivedURL = (launch?.location?.pads![0])?.wikiURL ?? ""
-            destination.searchString = (launch?.location?.pads![0])?.name ?? ""
+            destination.receivedURL = (launch?.location?.pads?[0])?.wikiURL ?? ""
+            destination.searchString = (launch?.location?.pads?[0])?.name ?? ""
         case "GoToLSPWiki":
             let destination = segue.destination as! WebViewController
             destination.receivedURL = launch?.lsp?.wikiURL ?? ""

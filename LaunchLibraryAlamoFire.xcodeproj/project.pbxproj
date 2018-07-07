@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D23EC21020DEEB8700ABB757 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23EC20F20DEEB8700ABB757 /* Extensions.swift */; };
 		D23EC21220E09F8700ABB757 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23EC21120E09F8700ABB757 /* MapViewController.swift */; };
+		D2935FB520ED2FEF008428B4 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2935FB420ED2FEF008428B4 /* Config.swift */; };
 		D29FE8EB20D839F10099D82A /* Pad.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29FE8EA20D839F10099D82A /* Pad.swift */; };
 		D29FE8ED20D83AA90099D82A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29FE8EC20D83AA90099D82A /* Location.swift */; };
 		D29FE8EF20D83E2C0099D82A /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29FE8EE20D83E2C0099D82A /* Rocket.swift */; };
@@ -36,6 +37,7 @@
 		9FFE147B29D5A0EE12FAE3FC /* Pods_LaunchLibraryAlamoFire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaunchLibraryAlamoFire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23EC20F20DEEB8700ABB757 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D23EC21120E09F8700ABB757 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = Controllers/MapViewController.swift; sourceTree = "<group>"; };
+		D2935FB420ED2FEF008428B4 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		D29FE8EA20D839F10099D82A /* Pad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Pad.swift; path = Models/Pad.swift; sourceTree = "<group>"; };
 		D29FE8EC20D83AA90099D82A /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		D29FE8EE20D83E2C0099D82A /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Rocket.swift; path = Models/Rocket.swift; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		D2935FB320ED2FCB008428B4 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D2935FB420ED2FEF008428B4 /* Config.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		D2B00E5E20E2ED6A004A8F01 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +140,7 @@
 		D2D42A4F20D8117600BAA9C5 /* LaunchLibraryAlamoFire */ = {
 			isa = PBXGroup;
 			children = (
+				D2935FB320ED2FCB008428B4 /* Config */,
 				D2EC121B20E886D400DB0019 /* LaunchLibraryAlamoFire.entitlements */,
 				D2D3574620D9F28200F67FD3 /* Supporting Files */,
 				D2D42A5E20D8117600BAA9C5 /* Main.storyboard */,
@@ -170,9 +181,9 @@
 			isa = PBXGroup;
 			children = (
 				D2D42A5920D8117600BAA9C5 /* WebViewController.swift */,
+				D23EC21120E09F8700ABB757 /* MapViewController.swift */,
 				D2D3574220D84D1600F67FD3 /* LaunchesTableViewController.swift */,
 				D2D3574420D967D000F67FD3 /* MissionDetailsViewController.swift */,
-				D23EC21120E09F8700ABB757 /* MapViewController.swift */,
 				D2C63D9C20E99344000BCDFE /* LaunchDetailTableViewController.swift */,
 			);
 			name = Controllers;
@@ -319,6 +330,7 @@
 				D29FE8F120D83F3E0099D82A /* Agency.swift in Sources */,
 				D2D3574320D84D1600F67FD3 /* LaunchesTableViewController.swift in Sources */,
 				D2D42A5720D8117600BAA9C5 /* LaunchTableViewCell.swift in Sources */,
+				D2935FB520ED2FEF008428B4 /* Config.swift in Sources */,
 				D2D42A5420D8117600BAA9C5 /* Launch.swift in Sources */,
 				D2D3574520D967D000F67FD3 /* MissionDetailsViewController.swift in Sources */,
 				D2B00E6020E2ED8E004A8F01 /* SortEnum.swift in Sources */,
@@ -482,7 +494,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TG94VNPLAA;
 				INFOPLIST_FILE = LaunchLibraryAlamoFire/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -506,7 +518,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TG94VNPLAA;
 				INFOPLIST_FILE = LaunchLibraryAlamoFire/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

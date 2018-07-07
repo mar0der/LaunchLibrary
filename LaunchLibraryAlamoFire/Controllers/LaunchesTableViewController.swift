@@ -22,7 +22,6 @@ class LaunchesTableViewController: UITableViewController {
     }
     
     private var isDataBeingUpdated: Bool = false
-    
     private var previousLaunchType: LaunchType = .history
     private var currentLaunchType: LaunchType = .future
     private var previousSort: SortEnum = .desc
@@ -35,9 +34,6 @@ class LaunchesTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        tableView.rowHeight = UITableViewAutomaticDimension
-//        tableView.estimatedRowHeight = 140
-        //we start with fature lauches
         sortButton.isEnabled = false
         self.pullMoreData(type: currentLaunchType, limit: defaultLimit, offset: 0, sort: .asc, showSpinner: true)
 
@@ -108,30 +104,25 @@ class LaunchesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LaunchCell", for: indexPath) as! LaunchTableViewCell
         let launch = self.launches[indexPath.row]
-        //FIXME: put this in extension of Date
-        let dateFormatterGet = DateFormatter()
-        dateFormatterGet.dateFormat = "yyyy-MM-dd HH:mm:ss zzz"
-        
+         
         cell.launchName?.text = launch.name ?? ""
         cell.rocketName?.text = launch.lsp?.name ?? ""
         cell.launchImageView.moa.url = launch.rocket?.imageURL ?? "placeholder"
         if let net = launch.net {
-           cell.netLabel?.text = dateFormatterGet.string(from: net)
+           cell.netLabel?.text = Date.llDateToString(net)
         }
     
         //print(indexPath.row.description + " of " + launches.count.description)
-        //FIXME: - extract number 10 to configuration file
-        if indexPath.row > launches.count - 10 && isDataBeingUpdated == false {
+        if indexPath.row > launches.count - Config.loadMoreBuffer && isDataBeingUpdated == false {
             isDataBeingUpdated = true
             previousLaunchType = currentLaunchType
-            pullMoreData(type: currentLaunchType, limit: 50, offset: launches.count, sort: currentSort, showSpinner: false)
+            pullMoreData(type: currentLaunchType, limit: Config.pullMoreLimit, offset: launches.count, sort: currentSort, showSpinner: false)
         }
         return cell
     }
     
     // MARK: - Navigation
     
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case "GoToLaunchDetails":
