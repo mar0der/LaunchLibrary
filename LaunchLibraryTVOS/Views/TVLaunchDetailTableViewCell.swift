@@ -1,15 +1,14 @@
 //
-//  CustomTableViewCell.swift
-//  LaunchLibraryAlamoFire
+//  TVLaunchTableViewCell.swift
+//  LaunchLibraryTVOS
 //
-//  Created by petar on 6/18/18.
+//  Created by petar on 7/7/18.
 //  Copyright © 2018 petar. All rights reserved.
 //
 
 import UIKit
-import moa
 
-class LaunchTableViewCell: UITableViewCell {
+class TVLaunchDetailTableViewCell: UITableViewCell {
 
     @IBOutlet weak var launchImageView: UIImageView!
     @IBOutlet weak var launchName: UILabel!

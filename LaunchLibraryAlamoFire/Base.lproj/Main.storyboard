@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -14,13 +13,13 @@
         <!--Launches Table View Controller-->
         <scene sceneID="9DG-U9-n63">
             <objects>
-                <tableViewController id="jFo-OQ-xkT" customClass="LaunchesTableViewController" customModule="LaunchLibraryAlamoFire" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="jFo-OQ-xkT" customClass="LaunchesTableViewController" customModule="LaunchLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="84" estimatedRowHeight="84" sectionHeaderHeight="28" sectionFooterHeight="28" id="RWQ-9C-rbP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LaunchCell" rowHeight="84" id="4qg-Qs-z9I" customClass="LaunchTableViewCell" customModule="LaunchLibraryAlamoFire" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="LaunchCell" rowHeight="84" id="4qg-Qs-z9I" customClass="LaunchTableViewCell" customModule="LaunchLibraryIOS" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="84"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4qg-Qs-z9I" id="vib-3r-PLv">
@@ -46,8 +45,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vZ-ua-oaj">
-                                            <rect key="frame" x="92" y="58.333333333333336" width="283" height="0.0"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NET" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vZ-ua-oaj">
+                                            <rect key="frame" x="92" y="58.333333333333343" width="283" height="18"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -120,7 +119,7 @@
         <!--Mission Details-->
         <scene sceneID="osH-fC-ZQC">
             <objects>
-                <viewController id="77o-ey-bfG" customClass="MissionDetailsViewController" customModule="LaunchLibraryAlamoFire" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="77o-ey-bfG" customClass="MissionDetailsViewController" customModule="LaunchLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bMo-GD-HR3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -247,7 +246,7 @@
         <!--Launch Detail Table View Controller-->
         <scene sceneID="lWT-Ks-z76">
             <objects>
-                <tableViewController id="124-D5-TYK" customClass="LaunchDetailTableViewController" customModule="LaunchLibraryAlamoFire" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="124-D5-TYK" customClass="LaunchDetailTableViewController" customModule="LaunchLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="l3n-t4-15R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -430,7 +429,7 @@
         <!--Web View Controller-->
         <scene sceneID="xvr-3y-pyP">
             <objects>
-                <viewController id="GMq-Fc-7nj" customClass="WebViewController" customModule="LaunchLibraryAlamoFire" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GMq-Fc-7nj" customClass="WebViewController" customModule="LaunchLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="okw-4f-GKc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -464,7 +463,7 @@
         <!--Map View Controller-->
         <scene sceneID="7oP-hg-6lZ">
             <objects>
-                <viewController id="Pmo-fY-Kln" customClass="MapViewController" customModule="LaunchLibraryAlamoFire" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Pmo-fY-Kln" customClass="MapViewController" customModule="LaunchLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ydm-qy-8wo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

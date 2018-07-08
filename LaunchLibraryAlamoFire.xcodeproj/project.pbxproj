@@ -7,8 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0483973E1FC295CBF18DD2E9 /* Pods_LaunchLibraryTVOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 429DB967826FF399A15A13C3 /* Pods_LaunchLibraryTVOS.framework */; };
+		645418FDA750B5CB4DB99CFD /* Pods_LaunchLibraryIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6AD28F16BAC838293222575 /* Pods_LaunchLibraryIOS.framework */; };
 		D23EC21020DEEB8700ABB757 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23EC20F20DEEB8700ABB757 /* Extensions.swift */; };
 		D23EC21220E09F8700ABB757 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23EC21120E09F8700ABB757 /* MapViewController.swift */; };
+		D253B22120F0EEA000EB4E3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D253B22020F0EEA000EB4E3D /* Main.storyboard */; };
+		D253B22220F106CB00EB4E3D /* WebAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D42A5C20D8117600BAA9C5 /* WebAPI.swift */; };
+		D253B22320F10CEC00EB4E3D /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2935FB420ED2FEF008428B4 /* Config.swift */; };
+		D253B22520F299A000EB4E3D /* TVLaunchDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D253B22420F299A000EB4E3D /* TVLaunchDetailsTableViewController.swift */; };
+		D253B22720F29D8E00EB4E3D /* TVMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D253B22620F29D8E00EB4E3D /* TVMapViewController.swift */; };
+		D283BF1B20F0E6D80002296F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283BF1A20F0E6D80002296F /* AppDelegate.swift */; };
+		D283BF2220F0E6DB0002296F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D283BF2120F0E6DB0002296F /* Assets.xcassets */; };
+		D283BF2720F0E7860002296F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23EC20F20DEEB8700ABB757 /* Extensions.swift */; };
+		D283BF2820F0E7930002296F /* SortEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B00E5F20E2ED8E004A8F01 /* SortEnum.swift */; };
+		D283BF2920F0E7930002296F /* LauncType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B00E6120E2EF7E004A8F01 /* LauncType.swift */; };
+		D283BF2A20F0E79B0002296F /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D42A5320D8117600BAA9C5 /* Launch.swift */; };
+		D283BF2B20F0E79B0002296F /* Pad.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29FE8EA20D839F10099D82A /* Pad.swift */; };
+		D283BF2C20F0E79B0002296F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29FE8EC20D83AA90099D82A /* Location.swift */; };
+		D283BF2D20F0E79B0002296F /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29FE8EE20D83E2C0099D82A /* Rocket.swift */; };
+		D283BF2E20F0E79B0002296F /* Agency.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29FE8F020D83F3E0099D82A /* Agency.swift */; };
+		D283BF2F20F0E79B0002296F /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29FE8F220D843C90099D82A /* Mission.swift */; };
+		D283BF3020F0E79B0002296F /* Lsp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29FE8F420D847860099D82A /* Lsp.swift */; };
+		D283BF3520F0E8E10002296F /* TVLaunchesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283BF3420F0E8E10002296F /* TVLaunchesTableViewController.swift */; };
+		D283BF3920F0E9930002296F /* TVLaunchDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D283BF3820F0E9930002296F /* TVLaunchDetailTableViewCell.swift */; };
 		D2935FB520ED2FEF008428B4 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2935FB420ED2FEF008428B4 /* Config.swift */; };
 		D29FE8EB20D839F10099D82A /* Pad.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29FE8EA20D839F10099D82A /* Pad.swift */; };
 		D29FE8ED20D83AA90099D82A /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29FE8EC20D83AA90099D82A /* Location.swift */; };
@@ -34,9 +55,23 @@
 
 /* Begin PBXFileReference section */
 		13A69F730505D71E3B4353BD /* Pods-LaunchLibraryAlamoFire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaunchLibraryAlamoFire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaunchLibraryAlamoFire/Pods-LaunchLibraryAlamoFire.debug.xcconfig"; sourceTree = "<group>"; };
+		3550FB6D80C0708944080220 /* Pods-LaunchLibraryIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaunchLibraryIOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaunchLibraryIOS/Pods-LaunchLibraryIOS.release.xcconfig"; sourceTree = "<group>"; };
+		429DB967826FF399A15A13C3 /* Pods_LaunchLibraryTVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaunchLibraryTVOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83AFD7DEDF775DE5B566D87B /* Pods-LaunchLibraryIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaunchLibraryIOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaunchLibraryIOS/Pods-LaunchLibraryIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		96AA234AEDD5C69FEAFED541 /* Pods-LaunchLibraryTVOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaunchLibraryTVOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaunchLibraryTVOS/Pods-LaunchLibraryTVOS.release.xcconfig"; sourceTree = "<group>"; };
 		9FFE147B29D5A0EE12FAE3FC /* Pods_LaunchLibraryAlamoFire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaunchLibraryAlamoFire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB47412BEA4FBCE4504E6CF7 /* Pods-LaunchLibraryTVOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaunchLibraryTVOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaunchLibraryTVOS/Pods-LaunchLibraryTVOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D23EC20F20DEEB8700ABB757 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		D23EC21120E09F8700ABB757 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = Controllers/MapViewController.swift; sourceTree = "<group>"; };
+		D253B22020F0EEA000EB4E3D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		D253B22420F299A000EB4E3D /* TVLaunchDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVLaunchDetailsTableViewController.swift; sourceTree = "<group>"; };
+		D253B22620F29D8E00EB4E3D /* TVMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVMapViewController.swift; sourceTree = "<group>"; };
+		D283BF1820F0E6D80002296F /* LaunchLibraryTVOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchLibraryTVOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D283BF1A20F0E6D80002296F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D283BF2120F0E6DB0002296F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D283BF2320F0E6DB0002296F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D283BF3420F0E8E10002296F /* TVLaunchesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVLaunchesTableViewController.swift; sourceTree = "<group>"; };
+		D283BF3820F0E9930002296F /* TVLaunchDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVLaunchDetailTableViewCell.swift; sourceTree = "<group>"; };
 		D2935FB420ED2FEF008428B4 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		D29FE8EA20D839F10099D82A /* Pad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Pad.swift; path = Models/Pad.swift; sourceTree = "<group>"; };
 		D29FE8EC20D83AA90099D82A /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -49,7 +84,7 @@
 		D2C63D9C20E99344000BCDFE /* LaunchDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchDetailTableViewController.swift; path = Controllers/LaunchDetailTableViewController.swift; sourceTree = "<group>"; };
 		D2D3574220D84D1600F67FD3 /* LaunchesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchesTableViewController.swift; path = Controllers/LaunchesTableViewController.swift; sourceTree = "<group>"; };
 		D2D3574420D967D000F67FD3 /* MissionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MissionDetailsViewController.swift; path = Controllers/MissionDetailsViewController.swift; sourceTree = "<group>"; };
-		D2D42A4D20D8117600BAA9C5 /* LaunchLibraryAlamoFire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchLibraryAlamoFire.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2D42A4D20D8117600BAA9C5 /* LaunchLibraryIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaunchLibraryIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2D42A5020D8117600BAA9C5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2D42A5320D8117600BAA9C5 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Launch.swift; path = Models/Launch.swift; sourceTree = "<group>"; };
 		D2D42A5620D8117600BAA9C5 /* LaunchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchTableViewCell.swift; path = Views/LaunchTableViewCell.swift; sourceTree = "<group>"; };
@@ -60,15 +95,25 @@
 		D2D42A6420D8117800BAA9C5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2D42A6620D8117800BAA9C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2EC121B20E886D400DB0019 /* LaunchLibraryAlamoFire.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LaunchLibraryAlamoFire.entitlements; sourceTree = "<group>"; };
+		E6AD28F16BAC838293222575 /* Pods_LaunchLibraryIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaunchLibraryIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9F09D7F6D0C72905A140F99 /* Pods-LaunchLibraryAlamoFire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaunchLibraryAlamoFire.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaunchLibraryAlamoFire/Pods-LaunchLibraryAlamoFire.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D283BF1520F0E6D80002296F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0483973E1FC295CBF18DD2E9 /* Pods_LaunchLibraryTVOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2D42A4A20D8117600BAA9C5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EA5C92C9385FBA92764F074C /* Pods_LaunchLibraryAlamoFire.framework in Frameworks */,
+				645418FDA750B5CB4DB99CFD /* Pods_LaunchLibraryIOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +125,10 @@
 			children = (
 				13A69F730505D71E3B4353BD /* Pods-LaunchLibraryAlamoFire.debug.xcconfig */,
 				F9F09D7F6D0C72905A140F99 /* Pods-LaunchLibraryAlamoFire.release.xcconfig */,
+				83AFD7DEDF775DE5B566D87B /* Pods-LaunchLibraryIOS.debug.xcconfig */,
+				3550FB6D80C0708944080220 /* Pods-LaunchLibraryIOS.release.xcconfig */,
+				BB47412BEA4FBCE4504E6CF7 /* Pods-LaunchLibraryTVOS.debug.xcconfig */,
+				96AA234AEDD5C69FEAFED541 /* Pods-LaunchLibraryTVOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -90,6 +139,45 @@
 				D23EC20F20DEEB8700ABB757 /* Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D283BF1920F0E6D80002296F /* LaunchLibraryTVOS */ = {
+			isa = PBXGroup;
+			children = (
+				D283BF3320F0E81D0002296F /* Views */,
+				D283BF3120F0E7DE0002296F /* Controllers */,
+				D283BF3220F0E8070002296F /* Supporting Files */,
+				D283BF2320F0E6DB0002296F /* Info.plist */,
+			);
+			path = LaunchLibraryTVOS;
+			sourceTree = "<group>";
+		};
+		D283BF3120F0E7DE0002296F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D283BF3420F0E8E10002296F /* TVLaunchesTableViewController.swift */,
+				D253B22420F299A000EB4E3D /* TVLaunchDetailsTableViewController.swift */,
+				D253B22620F29D8E00EB4E3D /* TVMapViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D283BF3220F0E8070002296F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D283BF2120F0E6DB0002296F /* Assets.xcassets */,
+				D283BF1A20F0E6D80002296F /* AppDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D283BF3320F0E81D0002296F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D283BF3820F0E9930002296F /* TVLaunchDetailTableViewCell.swift */,
+				D253B22020F0EEA000EB4E3D /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		D2935FB320ED2FCB008428B4 /* Config */ = {
@@ -123,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				D2D42A4F20D8117600BAA9C5 /* LaunchLibraryAlamoFire */,
+				D283BF1920F0E6D80002296F /* LaunchLibraryTVOS */,
 				D2D42A4E20D8117600BAA9C5 /* Products */,
 				3669224EED241505BE3467E2 /* Pods */,
 				D83CFDDAD9FD93A3A5E46E55 /* Frameworks */,
@@ -132,7 +221,8 @@
 		D2D42A4E20D8117600BAA9C5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D2D42A4D20D8117600BAA9C5 /* LaunchLibraryAlamoFire.app */,
+				D2D42A4D20D8117600BAA9C5 /* LaunchLibraryIOS.app */,
+				D283BF1820F0E6D80002296F /* LaunchLibraryTVOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,6 +291,8 @@
 			isa = PBXGroup;
 			children = (
 				9FFE147B29D5A0EE12FAE3FC /* Pods_LaunchLibraryAlamoFire.framework */,
+				E6AD28F16BAC838293222575 /* Pods_LaunchLibraryIOS.framework */,
+				429DB967826FF399A15A13C3 /* Pods_LaunchLibraryTVOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -208,9 +300,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D2D42A4C20D8117600BAA9C5 /* LaunchLibraryAlamoFire */ = {
+		D283BF1720F0E6D80002296F /* LaunchLibraryTVOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D2D42A6920D8117800BAA9C5 /* Build configuration list for PBXNativeTarget "LaunchLibraryAlamoFire" */;
+			buildConfigurationList = D283BF2420F0E6DB0002296F /* Build configuration list for PBXNativeTarget "LaunchLibraryTVOS" */;
+			buildPhases = (
+				0E745138D578922271949A76 /* [CP] Check Pods Manifest.lock */,
+				D283BF1420F0E6D80002296F /* Sources */,
+				D283BF1520F0E6D80002296F /* Frameworks */,
+				D283BF1620F0E6D80002296F /* Resources */,
+				99C20B1B7C2A6A1C8B8982B5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LaunchLibraryTVOS;
+			productName = LaunchLibraryTVOS;
+			productReference = D283BF1820F0E6D80002296F /* LaunchLibraryTVOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D2D42A4C20D8117600BAA9C5 /* LaunchLibraryIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D2D42A6920D8117800BAA9C5 /* Build configuration list for PBXNativeTarget "LaunchLibraryIOS" */;
 			buildPhases = (
 				B42426B0BCB6275BC49166E9 /* [CP] Check Pods Manifest.lock */,
 				D2D42A4920D8117600BAA9C5 /* Sources */,
@@ -222,9 +333,9 @@
 			);
 			dependencies = (
 			);
-			name = LaunchLibraryAlamoFire;
+			name = LaunchLibraryIOS;
 			productName = LaunchLibraryAlamoFire;
-			productReference = D2D42A4D20D8117600BAA9C5 /* LaunchLibraryAlamoFire.app */;
+			productReference = D2D42A4D20D8117600BAA9C5 /* LaunchLibraryIOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -237,6 +348,9 @@
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = petar;
 				TargetAttributes = {
+					D283BF1720F0E6D80002296F = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
 					D2D42A4C20D8117600BAA9C5 = {
 						CreatedOnToolsVersion = 9.4.1;
 						SystemCapabilities = {
@@ -260,12 +374,22 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D2D42A4C20D8117600BAA9C5 /* LaunchLibraryAlamoFire */,
+				D2D42A4C20D8117600BAA9C5 /* LaunchLibraryIOS */,
+				D283BF1720F0E6D80002296F /* LaunchLibraryTVOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D283BF1620F0E6D80002296F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D283BF2220F0E6DB0002296F /* Assets.xcassets in Resources */,
+				D253B22120F0EEA000EB4E3D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2D42A4B20D8117600BAA9C5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,16 +403,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0E745138D578922271949A76 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LaunchLibraryTVOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		85EFCB2E1F8938DC151644F5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-LaunchLibraryAlamoFire/Pods-LaunchLibraryAlamoFire-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/moa/moa.framework",
+				"${SRCROOT}/Pods/Target Support Files/Pods-LaunchLibraryIOS/Pods-LaunchLibraryIOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-iOS/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD-iOS/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/moa-iOS/moa.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -298,7 +440,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaunchLibraryAlamoFire/Pods-LaunchLibraryAlamoFire-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaunchLibraryIOS/Pods-LaunchLibraryIOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99C20B1B7C2A6A1C8B8982B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LaunchLibraryTVOS/Pods-LaunchLibraryTVOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire-tvOS/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD-tvOS/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/moa-tvOS/moa.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/moa.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaunchLibraryTVOS/Pods-LaunchLibraryTVOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B42426B0BCB6275BC49166E9 /* [CP] Check Pods Manifest.lock */ = {
@@ -312,7 +476,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LaunchLibraryAlamoFire-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-LaunchLibraryIOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -322,6 +486,30 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D283BF1420F0E6D80002296F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D283BF2F20F0E79B0002296F /* Mission.swift in Sources */,
+				D283BF2D20F0E79B0002296F /* Rocket.swift in Sources */,
+				D253B22320F10CEC00EB4E3D /* Config.swift in Sources */,
+				D283BF2720F0E7860002296F /* Extensions.swift in Sources */,
+				D283BF2C20F0E79B0002296F /* Location.swift in Sources */,
+				D253B22720F29D8E00EB4E3D /* TVMapViewController.swift in Sources */,
+				D253B22520F299A000EB4E3D /* TVLaunchDetailsTableViewController.swift in Sources */,
+				D283BF2B20F0E79B0002296F /* Pad.swift in Sources */,
+				D253B22220F106CB00EB4E3D /* WebAPI.swift in Sources */,
+				D283BF2920F0E7930002296F /* LauncType.swift in Sources */,
+				D283BF2820F0E7930002296F /* SortEnum.swift in Sources */,
+				D283BF3920F0E9930002296F /* TVLaunchDetailTableViewCell.swift in Sources */,
+				D283BF2A20F0E79B0002296F /* Launch.swift in Sources */,
+				D283BF2E20F0E79B0002296F /* Agency.swift in Sources */,
+				D283BF1B20F0E6D80002296F /* AppDelegate.swift in Sources */,
+				D283BF3520F0E8E10002296F /* TVLaunchesTableViewController.swift in Sources */,
+				D283BF3020F0E79B0002296F /* Lsp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D2D42A4920D8117600BAA9C5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,6 +558,50 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D283BF2520F0E6DB0002296F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB47412BEA4FBCE4504E6CF7 /* Pods-LaunchLibraryTVOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TG94VNPLAA;
+				INFOPLIST_FILE = LaunchLibraryTVOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.petarpetkov.LaunchLibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Debug;
+		};
+		D283BF2620F0E6DB0002296F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96AA234AEDD5C69FEAFED541 /* Pods-LaunchLibraryTVOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TG94VNPLAA;
+				INFOPLIST_FILE = LaunchLibraryTVOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.petarpetkov.LaunchLibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 11.0;
+			};
+			name = Release;
+		};
 		D2D42A6720D8117800BAA9C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -486,7 +718,7 @@
 		};
 		D2D42A6A20D8117800BAA9C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 13A69F730505D71E3B4353BD /* Pods-LaunchLibraryAlamoFire.debug.xcconfig */;
+			baseConfigurationReference = 83AFD7DEDF775DE5B566D87B /* Pods-LaunchLibraryIOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LaunchLibraryAlamoFire/LaunchLibraryAlamoFire.entitlements;
@@ -510,7 +742,7 @@
 		};
 		D2D42A6B20D8117800BAA9C5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9F09D7F6D0C72905A140F99 /* Pods-LaunchLibraryAlamoFire.release.xcconfig */;
+			baseConfigurationReference = 3550FB6D80C0708944080220 /* Pods-LaunchLibraryIOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LaunchLibraryAlamoFire/LaunchLibraryAlamoFire.entitlements;
@@ -535,6 +767,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D283BF2420F0E6DB0002296F /* Build configuration list for PBXNativeTarget "LaunchLibraryTVOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D283BF2520F0E6DB0002296F /* Debug */,
+				D283BF2620F0E6DB0002296F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D2D42A4820D8117600BAA9C5 /* Build configuration list for PBXProject "LaunchLibraryAlamoFire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -544,7 +785,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D2D42A6920D8117800BAA9C5 /* Build configuration list for PBXNativeTarget "LaunchLibraryAlamoFire" */ = {
+		D2D42A6920D8117800BAA9C5 /* Build configuration list for PBXNativeTarget "LaunchLibraryIOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2D42A6A20D8117800BAA9C5 /* Debug */,

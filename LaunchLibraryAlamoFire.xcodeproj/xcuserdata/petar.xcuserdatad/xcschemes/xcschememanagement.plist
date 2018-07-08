@@ -4,10 +4,28 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>LaunchLibraryAlamoFire.xcscheme</key>
+		<key>LaunchLibrary iOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>0</integer>
+		</dict>
+		<key>LaunchLibraryTVOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>D283BF0420F0E27C0002296F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D2D42A4C20D8117600BAA9C5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
