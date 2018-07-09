@@ -18,6 +18,8 @@ class LaunchTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.launchImageView.layer.masksToBounds = true
+        launchImageView.layer.cornerRadius = 5
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

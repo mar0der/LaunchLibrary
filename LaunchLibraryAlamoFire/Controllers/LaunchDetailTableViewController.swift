@@ -45,7 +45,6 @@ class LaunchDetailTableViewController: UITableViewController {
         case "GoToLSPWiki":
             let destination = segue.destination as! WebViewController
             destination.receivedURL = launch?.lsp?.wikiURL ?? ""
-            destination.receivedURL = launch?.lsp?.name ?? ""
         case "GoToMapView":
             let destination = segue.destination as! MapViewController
             destination.latDoubleOpt = launch?.location?.pads?[0].latitude
