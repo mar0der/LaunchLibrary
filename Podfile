@@ -41,3 +41,10 @@ target 'LaunchLibraryTVOS' do
     use_frameworks!
     pods
 end
+
+target 'Launch Library Extension' do
+    platform :watchos , '4.0'
+    use_frameworks!
+    pod 'Alamofire', '~> 4.7'
+end
+
